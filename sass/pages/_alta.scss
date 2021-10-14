@@ -1,0 +1,47 @@
+
+.alta_products{
+    legend{
+        text-align: center;
+        font-family: 'catamaran';
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+.alta_form{
+    font-family: 'catamaran';
+    font-weight: bold;
+}
+#nombre{
+    width: 100%;
+}
+#precio{
+    width: 50%;
+}
+#stock{
+    width: 50%;
+}
+#marcas{
+    width: 50%;
+}
+#categorias{
+    width: 50%;
+}
+#details{
+    width: 50%;
+}
+.alta_condition{
+    text-align: center;
+}
+#reestablecer{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    margin-top: 0.2em;
+}
+#iniciar_alta{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    margin-right: 1.3em;
+
+}

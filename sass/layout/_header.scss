@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
+
+/*********************************
+            HEADER
+*********************************/
+
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked + .nav-bar {
+    display: block;
+}
+
+#menu:checked ~ .search-bar .menu-toggle__label {
+    background-color: black;
+}
+
+/*********************************
+            NAV BAR
+*********************************/
+.nav-bar {
+    background-color:black;
+    padding-left: auto;
+}
+
+.nav-bar__nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color:black;
+    height: 40px;
+}
+
+.nav-bar__nav-item {
+    text-align: center;
+    &:hover{
+        font-weight: bold;
+    }
+
+}
+
+.nav-bar__nav-link {
+    display: block;
+    background-color: black;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    margin-bottom: 1em;
+    font-size: 1em;
+    height: 40px;
+}
+
+
+/*********************************
+            SEARCH BAR
+*********************************/
+.search-bar__logo-container{
+    font-size: 10px;
+    text-align: center;
+    left: 10px;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    img{
+        width: 15em;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+.search-bar {
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-bar__form-container {
+    color: white;
+    background-color:black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.search-bar__form-label {
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.search-bar__form-search {
+    background-color:whitesmoke;
+    height: 35px;
+    width: 70%;
+    border-radius: 5px;
+    margin-top: 2em;
+}
+
+.search-bar__form-submit {
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 2.5em;
+    border-color: black;
+}
+
+.search-bar__carrito-container {
+    background-image: url(../../img/iconos/carrito.png);
+    background-color:black;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    margin-right: 0.6em;
+    margin-top: 2em;
+    flex: 0 0 3em;
+}
+.search-bar__cuenta-container{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    height: fit-content;
+    width: 8em;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.1em solid whitesmoke;
+    margin: 1.4em;
+    margin-right: 0.4em;
+    margin-top: 3.6em;
+    &:hover{
+        font-weight: bold;
+    }
+}
+.search-bar__alta-container{
+    background-color:black;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    height: fit-content;
+    width: 8em;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.1em solid whitesmoke;
+    margin-right: 0.1em;
+    margin-top: 3.6em;
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+/*********************************
+            MENU TOGGLE (no figura cuando achico pantalla)
+*********************************/
+.menu-toggle {
+    display: none;
+    background-color: black;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-toggle__label {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-toggle__pan-arriba,
+.menu-toggle__medallon,
+.menu-toggle__pan-abajo {
+    display: block;
+    background-color: black;
+    height: .2em;
+    position: absolute;
+    left: .5em;
+    right: .5em;
+    margin: 0 auto;
+}
+
+.menu-toggle__pan-arriba {
+    top: .8em;
+}
+.menu-toggle__medallon {
+    top: 50%;
+    margin-top: -.15em;
+}
+.menu-toggle__pan-abajo {
+    bottom: .8em;
+}
+
+@media (max-width: 768px) {
+
+    .main-header {
+        flex-direction: column-reverse;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar__nav-list {
+        flex-direction: column;
+    }
+
+}

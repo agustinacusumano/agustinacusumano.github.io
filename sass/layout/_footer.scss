@@ -1,0 +1,46 @@
+
+/****************************
+         CONDICIONES
+****************************/
+.footer__condition{
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+
+.cards__option-pay{
+    background-color: #f1f2f3;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+    padding: 2em;
+    
+}
+
+.cards__envio-method{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+.cards__pay-method{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        font-weight: bold;
+    }
+}
+.cards__security-method{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        font-weight: bold;
+    }
+}
+

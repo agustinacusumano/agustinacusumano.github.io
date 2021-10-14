@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+    <header class="main-header">
+        
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                <img src="img/inicio/Logo1.png"  alt="">
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-bar__nav-list">
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+
+    </header>
+
+    <form action="alta.php" method="POST" autocomplete="off">
+        <fieldset class="alta_products">
+            <legend> Alta de productos</legend>
+                <div class="alta_form">
+                    <div>
+                        <label for="nombre">Nombre:</label> <br>
+                        <input name="nombre" id="nombre" required>
+                     </div>
+                    <div>
+                        <label for="precio">Precio:</label> <br>
+                        <input name="precio" id="precio" required type="number">
+                    </div>
+                    <div>
+                        <label for="stock">Stock:</label> <br>
+                        <input name="stock" id="stock" required type="number">
+                    </div>
+                    <div>
+                        <label for="marcas">Marcas:</label> <br>
+                        <select name="marcas" id="marcas" required>
+                            <option value=""> - Seleccionar - </option>
+                            <option value="1">Lenovo</option>
+                            <option value="2">Sony</option>
+                            <option value="3">JBL</option>
+                            <option value="4">Apple</option>
+                            <option value="5">Mavic</option>
+                            <option value="6">Canon</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="categorias">Categorías:</label> <br>
+                        <select name="categorias" id="categorias" required>
+                            <option value=""> - Seleccionar - </option>
+                            <option value="1">Telefonía</option>
+                            <option value="2">Televisores</option>
+                            <option value="3">Sonido</option>
+                            <option value="4">Drones</option>
+                            <option value="5">Fotografía</option>
+                            <option value="6">Otros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="photo">Foto:</label> <br>
+                        <input name="photo" id="photo" required type="file">
+                    </div>
+                    <div>
+                        <label for="details">Detalle del producto:</label> <br>
+                        <textarea name="details" id="details" cols="40" rows="3"></textarea> 
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="envios_sin_cargo" value="envios_sin_cargo">
+                            Envios sin cargo
+                        </label>
+                    </div>
+                </div>    
+        </fieldset>
+
+        <div class="alta_condition"> 
+            <div class="alta_button">
+                <input type="submit" value="Iniciar alta" id="iniciar_alta">
+                <input type="reset" value="Reestablecer" id="reestablecer">
+            </div>  
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer__condition">
+            <ul class="footer__list-condition">
+                <li class="footer_condition-item">Copyright © 2021 Connecticus SRL</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+    
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+    <header class="main-header">
+    
+        <input type="checkbox" id="menu">
+
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                <img src="img/inicio/Logo1.png"  alt="">
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda"></label>
+                <input class="search-bar__form-search" id="busqueda" type="search" placeholder="  Buscar productos, marcas y más">
+                <div>
+                    <input class="search-bar__form-submit" type="submit" value="Buscar">
+                </div>
+            </form>
+            <a class="search-bar__alta-container" href="alta.html">Registrarme</a>
+            <a class="search-bar__cuenta-container" href="cuenta.html">Ingresar</a>
+            <a class="search-bar__carrito-container" href="carrito.html" target="_blank"></a>   
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>  
+        </div> 
+
+    </header>
+    <main>
+
+        <section class="section-cards">
+            
+            <header class="section-cards__header">
+                <h1>Nuestros productos más buscados.</h1>
+            </header>
+
+            <div class="cards-container">
+                <!-- completar información img-->
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/notebook-lenovo.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Notebook Lenovo</h3>
+                            <div class="card__description">
+                                <p>V330 Core I7 8550u </p>
+                                <p>Pantalla 15.6'</p>
+                                <p> $92.000</p>
+                                <p>Hasta 6 cuotas sin interés</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/apple-iphone-11-pro-max.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Iphone 11 Pro Max</h3>
+                            <div class="card__description">
+                                <p>Memoria externa 128 GB.</p>
+                                <p>Garantía Apple</p>
+                                <p>$188.999</p>
+                                <p>Opciones de pago</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/camara-canon.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Cámara Canon</h3>
+                            <div class="card__description">
+                                <p>EOS Kit M200.</p>
+                                <p>Lente 15-45 mm</p>
+                                <p>$87.800</p>
+                                <p>Hasta 6 cuotas sin interés</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/auriculares-sony.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Auriculares Sony</h3>
+                            <div class="card__description">
+                                <p>ZX Series MDR-ZX110.</p>
+                                <p>Reguladores</p>
+                                <p>$2.500</p>
+                                <p>Opciones de pago</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/parlante-jbl.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante JBL</h3>
+                            <div class="card__description">
+                                <p>Flip 5 portátil.</p>
+                                <p>110v/220v</p>
+                                <p>$5.599</p>
+                                <p>Hasta 6 cuotas sin interés</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/google-nest-mini.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante Noga Go!</h3>
+                            <div class="card__description">
+                                <p>Mini portátil.</p>
+                                <p>Flip 3</p>
+                                <p>$1.800</p>
+                                <p>Opciones de pago</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/samsung-galaxy-s21-plus-5g.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Samsung Galaxy S21</h3>
+                            <div class="card__description">
+                                <p>Memoria externa 128GB</p>
+                                <p>Incluye accesorios</p>
+                                <p>$45.000</p>
+                                <p>Hasta 6 cuotas sin interés</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/drone-dji.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Drone DJI Mavic</h3>
+                            <div class="card__description">
+                                <p>Cámara 4k gris.</p>
+                                <p>GPS Incluido</p>
+                                <p> $199.999.-</p>
+                                <p>Ver los medios de pago.</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/notebook-lenovo.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Notebook Lenovo</h3>
+                            <div class="card__description">
+                                <p>Intel Core I5 10210u </p>
+                                <p>Pantalla 14'</p>
+                                <p> $84.200</p>
+                                <p>Hasta 6 cuotas sin interés</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/dji-mavic-2-pro.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Drone DJI Mavic Mini</h3>
+                            <div class="card__description">
+                                <p>Cámara 4k light.</p>
+                                <p>Con giro 360</p>
+                                <p> $119.999.-</p>
+                                <p>Ver los medios de pago.</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/camara-canon.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Cámara Canon</h3>
+                            <div class="card__description">
+                                <p>EOS Rebel Kit T100.</p>
+                                <p>Lente 18-55 mm</p>
+                                <p>$74.999</p>
+                                <p>Hasta 6 cuotas sin interés</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/chromecast-google.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante Noga Go!</h3>
+                            <div class="card__description">
+                                <p>NG P-780.</p>
+                                <p>Duett TWS</p>
+                                <p>$5.999</p>
+                                <p>Hasta 6 cuotas sin interés</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/parlante-jbl.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante JBL</h3>
+                            <div class="card__description">
+                                <p>Flip 4 portátil.</p>
+                                <p>110v/220v</p>
+                                <p>$4.500</p>
+                                <p>Opciones de pago</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/google-nest-mini.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante Sony</h3>
+                            <div class="card__description">
+                                <p>Bose SoundLink.</p>
+                                <p>Fun SP08</p>
+                                <p>$4.500</p>
+                                <p>Opciones de pago</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/televisor-lg.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Smart TV Samsung</h3>
+                            <div class="card__description">
+                                <p>Led 4k 43".</p>
+                                <p>Comando de voz</p>
+                                <p>$69.000</p>
+                                <p>Págalo en 18 cuotas sin interés.</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/drone-dji.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Drone Daming</h3>
+                            <div class="card__description">
+                                <p>Cámara 4k Full HD.</p>
+                                <p>Baterias incluidas</p>
+                                <p> $14.950.-</p>
+                                <p>Ver los medios de pago.</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+        <section class="cards__option-container">
+            <h3>Elegí Connecticus</h3>
+            <div class="cards__option-pay">
+                <a class="cards__pay-method" href="https://www.mercadopago.com.ar/cuenta#qrpay">Elegí cómo pagar
+                    <div class="pay__method">
+                        <img src="img/iconos/opcionespago.jpg" alt="opciones-de-pago">
+                    </div>
+                </a>
+                <a class="cards__envio-method" href="https://www.correoargentino.com.ar/formularios/e-commerce">Envío gratis desde $3.500
+                    <div class="envio__method">
+                        <img src="img/iconos/envios.jpg" alt="opciones-de-envio">
+                    </div>
+                </a>
+                <a class="cards__security-method" href="#">Seguridad, de principio a fin
+                    <div class="security__method">
+                        <img src="img/iconos/seguridad,jpg.jpg" alt="opciones-de-seguridad">
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- desarrollo pie de pagina-->
+
+    <footer>
+        
+        <div class="footer__condition">
+            <ul class="footer__list-condition">
+                <li class="footer_condition-item">Copyright © 2021 Connecticus SRL</li>
+            </ul>
+        </div>
+        
+    </footer>
+</body>
+</html>

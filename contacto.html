@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+    <header class="main-header">
+        
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                <img src="img/inicio/Logo1.png"  alt="">
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-bar__nav-list">
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-bar__nav-item">
+                        <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+
+    </header>
+
+    <div class="helpyou">
+        <h1>¿Cómo podemos ayudarte?</h1>
+    </div>
+
+    <form action="enviado.php" method="POST" autocomplete="off">
+        <fieldset class="infopersonal">
+            
+                <div class="form">
+                    <div>
+                        <label for="nombre">Nombre:<sup>*</sup></label> <br>
+                        <input name="nombre" id="nombre" required>
+                     </div>
+                    <div>
+                        <label for="apellido">Apellido: <sup>*</sup></label> <br>
+                        <input name="apellido" id="apellido" required>
+                    </div>
+                    
+                    <div class="dotting"></div>
+                
+                    <div class="form">
+                        <label for="email">Dirección de correo electrónico: <sup>*</sup></label> <br>
+                        <input type="email" name="email" id="email" placeholder="Ej: mail@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="vos">Comentarios:</label> <br>
+                        <textarea name="vos" id="vos" cols="20" rows="2"></textarea> 
+                    </div>
+                        <p id="obligatorio"><sup>*</sup>campo obligatorio.</p>
+                    <div class="button">
+                        <input type="submit" value="Enviar" id="enviar">
+                        <input type="reset" value="Reestablecer" id="reestablecer">
+                    </div>
+                </div>
+
+        </fieldset>
+    </form>
+
+   
+    <div class="escribime">
+        <div class="email">
+            <img src="img/iconos/mail.jpg" alt="">
+            <p>
+                <a class="contact" href="mailto:connecticus.electronica@gmail.com">connecticus.electronica@gmail.com</a>
+            </p>
+        </div>
+        <div class="callcenter">
+            <img src="img/iconos/llamada.jpg" alt="">
+            <span> 0810-222-4889</span>
+        </div>
+        <div class="whatsapp">
+            <img src="img/iconos/whatsapp.jpg" alt="">
+            <p>
+                <a class="contact" href="wa.me/+5493416855372">3416-855372</a>
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        
+        <div class="footer__list-container-redes">
+            <h3>Te respondemos en nuestras redes</h3>
+            <ul class="footer__list-redes">
+                <li class="footer_list-item">
+                    <a class="footer_list-link" href="#"><img src="img/iconos/facebook.jpg" alt="">Facebook</a>
+                </li>
+                <li class="footer_list-item">
+                    <a class="footer_list-link" href="#"><img src="img/iconos/instagram.jpg" alt=""> Instagram</a>
+                </li>
+                <li class="footer_list-item">
+                    <a class="footer_list-link" href="#"><img src="img/iconos/twitter.jpg" alt=""> Twitter</a>
+                </li>
+            </ul>
+        </div>
+      
+        <div class="footer__condition">
+            <ul class="footer__list-condition">
+                <li class="footer_condition-item">Copyright © 2021 Connecticus SRL</li>
+            </ul>
+        </div>
+            
+    </footer>
+
+</body>
+
+</html>
